@@ -1,7 +1,8 @@
-import {useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { AgGridReact } from "ag-grid-react"; // React Data Grid Component
 import { ModuleRegistry, AllCommunityModule } from "ag-grid-community";
 import { DATA } from "./assets/data";
+import "./App.css";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -50,6 +51,9 @@ function App() {
 
   return (
     <div style={{ width: "99%", margin: "auto" }}>
+      <div className="header-container">
+        <h1 className="header">Employee List</h1>
+      </div>
       <div style={{ marginBottom: 10 }}>
         <label>
           Page Size:&nbsp;

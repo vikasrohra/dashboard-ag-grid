@@ -1,0 +1,8 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  color: rgb(88, 88, 80);
+}
